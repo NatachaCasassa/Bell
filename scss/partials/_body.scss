@@ -1,0 +1,75 @@
+@use './globals';
+
+body {
+  background-color: globals.$color-fondo;
+  color: globals.$color-texto;
+  font-family: globals.$fuente-principal;
+  font-size: globals.$tamano-texto;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  min-height: 75vh;
+
+  .about-us-text-container {
+    width: 60%;
+  }
+
+  .about-us-img-container {
+    width: 40%;
+  }
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .space {
+    margin: 15px;
+  }
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.main-container {
+  min-height: 75vh;
+}
+
+@media (max-width: 1300px) {
+  .about-us-container {
+    flex-direction: column;
+
+    .about-us-text-container {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .about-us-text-container {
+    font-size: 1.5rem;
+  }
+
+  .about-us-img-container img {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pages iframe {
+    margin-top: 50px;
+  }
+}

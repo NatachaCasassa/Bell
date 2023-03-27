@@ -1,0 +1,68 @@
+@use './globals';
+
+.navbar-nav {
+  justify-items: right;
+  text-align: right;
+}
+
+.navbar {
+  background-color: none;
+  height: 80px;
+  font-size: 20px;
+
+  .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: globals.$fuente-principal;
+    color: rgb(126, 186, 166);
+  }
+
+  .navbar-nav {
+    float: right;
+  }
+
+  .nav-link {
+    margin-right: 10px;
+  }
+
+  .navbar-toggler {
+    border-color: none;
+  }
+}
+
+#carouselExample {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner {
+  width: 90vw;
+  height: 80vh;
+  overflow: hidden;
+
+  .carousel-item {
+    img {
+      // margin-top: -380px;
+      height: 80vh;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-inner .carousel-item img {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item img {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1020px) {
+  .carousel-inner .carousel-item img {
+    margin-top: 0;
+  }
+}
